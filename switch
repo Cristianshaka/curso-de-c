@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+char qualquer() {
+    char letra;
+    printf("Escolha uma letra (a, b, c, d, e): ");
+    scanf(" %c", &letra); // Adicionando um espaço antes de %c para ignorar possíveis espaços em branco
+    
+    switch(letra) {
+        case 'a':
+            return 'A';
+        case 'b':
+            return 'B';
+        case 'c':
+            return 'C';
+        case 'd':
+            return 'D';
+        case 'e':
+            return 'E';
+        default:
+            printf("Letra inválida\n");
+            return ' '; // Retornando um espaço em branco para indicar erro
+    }
+}
+
+int main() {
+    char a;
+    a = qualquer();
+    printf("%c\n", a);
+    return 0;
+}
