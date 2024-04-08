@@ -1,0 +1,18 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+   int abacates;
+    printf("Quantos abacates?: ");
+    scanf("%d", &abacates);
+    if (abacates <= 5){
+        float valor = abacates*1;
+        
+        printf("Valor: %.1f", valor);
+        scanf("%.1f", &valor);
+        
+    }else if(abacates <= )
+
+
+    return 0;
+}
