@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+    int numero;
+    printf ("Número: ", &numero);
+    scanf("%d", &numero);
+    if(numero%2 == 0){
+        printf("Múltiplo por 2");
+    }else{
+        printf("Não é múltiplo por 2");
+    }
+
+    return 0;
+}
