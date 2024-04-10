@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main(void) {
+    int placa, final;
+    printf ("Digite a placa: ");
+    scanf ("%d", &placa);
+    final = placa % 10;
+    printf("Rodízio: ");
+    if (final == 1 ||  final == 2){
+        printf("Segunda\n");
+    }else if (final == 3 || final == 4){
+        printf("terça\n");
+    }else if (final == 5 ||  final == 6){
+        printf("Quarta\n");
+    }else if (final == 7 ||  final == 8){
+        printf("Quinta\n");
+    }else{
+        printf("Sexta\n");
+    
+    }
+    return 0;
+}
