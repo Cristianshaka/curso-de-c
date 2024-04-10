@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main() {
+    int i;
+    float num, soma = 0;
+    for(i=0; i<5; i++){
+        printf("Digite um numero: ");
+        scanf("%f", &num);
+        soma+=num; // armazena o resultado da soma e continua com o proximo numero
+    }
+    printf("Media: %.2f", soma/5);
+    
+}
