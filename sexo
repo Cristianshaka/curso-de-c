@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <ctype.h>
+
+int main(void) {
+    char sexo;
+    printf ("digite o sexo: ");
+    scanf ("%c", &sexo);
+    switch (toupper(sexo)){
+        case 'M':  
+        printf ("Masculino\n");
+        break;
+        case 'F':
+        printf ("Feminino\n");
+        break;
+        default:
+        printf ("Inválido\n");
+        break;
+    }
+}
