@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+
+int main(){
+    
+
+int x;
+printf("Escolha uma das opcoes abaixo:\n");
+printf("\t======================\n");
+printf("\t 1 - a\n");
+printf("\t 2 - b\n");
+printf("\t 3 - c\n");
+printf("\t======================\n");
+scanf("%d",&x); //coloca o x como variavel
+switch (x){//vai trocar o x de acordo com os casos
+   case 1:
+       printf("Opcao 1 = a\n");
+       break;
+   case 2:
+       printf("Opcao 2 = b\n");
+       break;
+   case 3:
+       printf("Opcao 3 = c\n");
+       break;
+   default:
+       printf("Escolha nula\n");
+}
+}
+
