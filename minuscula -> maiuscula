@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+
+void main() {
+   char letra;
+  
+   printf("Escreva uma letra minuscula : ");
+   scanf("%c", &letra);
+   
+  
+   if (letra > 96) {
+       printf("\n%c -----> %c...\n\n", letra, (letra - 32));
+       
+   }
+
+
+   printf("Letra maiuscula: '%c'\n", letra);
+  
+}
