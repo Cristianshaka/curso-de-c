@@ -1,0 +1,39 @@
+#include <stdio.h>
+
+int main() {
+    int num, maior = 0, menor = 0; // inicializar com 0
+    int primeiro = 1; 
+
+    printf("Digite um número (para encerrar, digite -1):\n");
+    
+    while (primeiro > -1) { // Loop infinito, será interrompido quando -1 for digitado
+        printf("Digite um número: ");
+        scanf("%d", &num);
+
+        if (num == -1) {
+            break; 
+        }
+
+        if (primeiro) {
+            maior = num; 
+            menor = num; 
+            primeiro = 0; 
+        } else {
+            if (num > maior) {
+                maior = num; // atualiza o maior número
+            }
+            if (num < menor) {
+                menor = num; // atualiza o menor número 
+            }
+        }
+    }
+
+    if (primeiro) {
+        printf("Nenhum número foi digitado.\n");
+    } else {
+        printf("O maior número digitado foi: %d\n", maior);
+        printf("O menor número digitado foi: %d\n", menor);
+    }
+
+    return 0;
+}
