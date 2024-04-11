@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+    char moeda;
+    float valor;
+    printf("Real ou Cruzeiro? ");
+    scanf ("%c", &moeda);
+    printf("Valor: ");
+    scanf ("%f", &valor);
+    
+    getchar ();
+    if(moeda == 'C' || moeda == 'c') { // cruzeiro
+        valor/=2750;
+        printf("%.2f reais", valor);
+    }
+    else if(moeda == 'R' || moeda == 'r') { // real
+        valor*=2750;
+        printf("%.2f cruzeiros", valor);
+    }
+    else{
+        printf("Moeda inválida\n");
+    }
+   }
