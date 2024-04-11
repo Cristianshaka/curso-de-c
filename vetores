@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+void main() {
+    int oioi[5], i;
+    
+    for(i = 0; i < 5; i++){
+        scanf("%d", &oioi[i]);
+    }
+    for(i = 0; i < 5; i++){
+        if(oioi[i]>0){
+             printf("\n%d", oioi[i]*-1);
+        }else{
+             printf("\n%d", oioi[i]);
+        }
+       
+    }
+}
