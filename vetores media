@@ -1,0 +1,19 @@
+#include <stdio.h>
+#define x 4
+void main() {
+    int notas[x], i, z;
+    float media;
+    
+    for(i = 0; i < 4; i++){
+        scanf("%d", &notas[i]);
+        media+=notas[i];
+        
+    }
+    media/=x;
+    for(i = 0; i < 4; i++){
+        if(notas[i] > media){
+           z++; 
+        }
+    }
+    printf("%f -- %i", media, z);
+}
