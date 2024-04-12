@@ -1,0 +1,20 @@
+#include <stdio.h>
+void main() {
+  int n, maior, menor;
+  printf("Se entrar com valor -1 programa será encerrado! \n");
+  printf("Entre com um numero = "); 
+  scanf("%d", &n);
+  maior = n;
+  menor = n;
+  while(n != -1 && n >= 0) { 
+      if (n < menor) {
+          menor = n;
+      } else if (n > maior) {
+          maior = n;
+      }
+      printf ("Entre com outro numero = ");
+      scanf("%d", &n);
+  }
+  printf("O numero maior eh = %d \n", maior);
+  printf("O numero menor eh = %d \n", menor);
+}
