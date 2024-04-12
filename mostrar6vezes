@@ -1,0 +1,11 @@
+#include<stdio.h>
+
+void mostrarHelloWorldSeisvezes() {
+  for (int i = i; i<6; i++){
+      printf("Hello World\n");
+  }
+}
+int main(){
+    mostrarHelloWorldSeisvezes();
+    return 0;
+}
