@@ -1,0 +1,17 @@
+#include<stdio.h>
+
+void maiorQue() {
+    int valor;
+    printf("Número: ");
+    scanf("%d", &valor);
+    //for (int i = 0; i < 6; i++) {
+    if (valor > 5){
+        printf("Maior!!");
+    }else{
+        printf("Menor!!");
+    }
+} 
+int main (){
+   maiorQue();
+   return 0;
+}
