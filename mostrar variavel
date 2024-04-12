@@ -1,0 +1,13 @@
+#include<stdio.h>
+
+void mostrarVariavel() {//criar situação
+    char variavel;//definir variável
+  printf("Caráter: ");
+  scanf("%c", &variavel);
+  printf ("vc escolheu %c", variavel);
+}
+
+int main (){
+    mostrarVariavel();//rodar situação
+    return 0;
+} 
