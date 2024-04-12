@@ -1,0 +1,22 @@
+#include<stdio.h>
+
+int maximo(int a, int b) {
+    
+   switch(a > b){ //O aviso que você está vendo indica que o compilador está alertando sobre uma condição booleana no comando switch, que não é comum em C. Para evitar esse aviso, você pode alterar a abordagem do switch para algo mais tradicional, usando if e else. Aqui está a versão revisada do código usando if e else:
+       case 1:
+       return a;
+       case 0:
+       return b;
+       default:
+       return a; //Na linha default:, mudei o retorno para a ao invés de b, para manter consistência com o caso em que a > b.
+   }
+} 
+int main (){
+    int num1, num2;
+    printf("Digite dois valores: ");
+    scanf("%d %d", &num1, &num2);
+    int maior = maximo(num1, num2);
+    printf("O maior numero e: %d\n", maior);
+   
+   return 0;
+}
