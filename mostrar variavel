@@ -4,6 +4,7 @@ void mostrarVariavel() {//criar situação
     char variavel;//definir variável
   printf("Caráter: ");
   scanf("%c", &variavel);
+// for (int i = 0; i < 5; i++) {
   printf ("vc escolheu %c", variavel);
 }
 
