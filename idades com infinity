@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    float maior = 0, menor = INFINITY , numero;
+    
+    while(numero != -1){
+         
+        printf("Numero: ");
+        scanf("%f", &numero);
+ 
+     if (numero <= -1){
+         break;
+     }
+     if(numero > maior){
+        maior = numero;
+    }
+     if(numero < menor){
+        menor = numero;
+        
+    }
+      
+
+ }
+ printf("maior: %.0f\n", maior);
+printf("menor: %.0f\n", menor);
+    
+    
+   
+ }
