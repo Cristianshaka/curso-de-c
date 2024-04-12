@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main () {
+   float notas[ 4 ] = {7.5, 8.0, 6.5, 3.5};
+   int i;
+   float media = 0;
+   /* Mostrando na tela as notas armazenadas */
+   for (i = 0; i < 4; i++ ) {
+    printf("Nota %d = %1.1f\n", i + 1, notas[i] );
+    media = (media + notas[i]);
+   }
+    media = media/4;
+    printf("A media vale = %1.1f",media);
+    return 0;
+}
