@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    int alunos, i;
+    float notas, media, soma = 0, num;
+    printf("Numero de alunos: ");
+    scanf("%d", &alunos);
+    
+    for(i=0; i<alunos; i++){
+        printf("Nota do aluno: ");
+        scanf("%f", &num);
+         soma+=num;
+    }
+    media=soma/alunos;
+    printf("media = %f", media);
+    
+}
